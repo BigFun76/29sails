@@ -190,7 +190,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #0d1218 url("../img/ep_naturalblack.png");
+  background: #f3e8ee;
   font-size: 14px;
   line-height: 1.6;
   font-size: 14px;
@@ -343,3 +343,54 @@ hr {
   top: 0;
   width: 100%;
   left: 0; }
+
+#Landing {
+  background-image: url("**/assets/img/29Logo.png");
+  background-color: #f3e8ee;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.grid-container {
+  text-align: center;
+  display: grid;
+  /*grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) */
+  grid-template-colums: 0.10fr, 0.10fr, 0.10fr, 0.10fr;
+  grid-template-rows: 0.10fr, 0.10fr, 0.10fr;
+  /*grid-gap: 1rem */ }
+
+.grid-item {
+  text-align: center;
+  display: block; }
+
+#logo1 {
+  grid-column: 1;
+  grid-row: 1; }
+
+#logo2 {
+  grid-column: 2;
+  grid-row: 1 / 2; }
+
+#logo3 {
+  grid-column: 3;
+  grid-row: 2; }
+
+#logo4 {
+  grid-column: 4;
+  grid-row: 1 / 2; }
+
+.redLine {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  border-bottom: 2em solid #f8333c;
+  align-self: start;
+  justify-content: end; }
+
+.redLine2 {
+  grid-column: 3 / 4;
+  grid-row: 3;
+  border-bottom: 2em solid #f8333c;
+  align-self: start;
+  justify-content: end;
+  z-index: 1; }
